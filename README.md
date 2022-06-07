@@ -41,7 +41,6 @@ As you can see As you can see As you can see As you can see As you can see As yo
 Next, we want to do a credential scan. To perform this we must do a few prerequisites first. To perform a credential scan for windows hosts not on the domain, we must allow 'remote registry' on the windows services. This will allow nessus to connect to the windows remote registry and crawl through the registry for any vulnerabilities
 
 
-
 Inputing User Credentials:  <br/>
 <img src="https://i.imgur.com/EeuTNCq.png" height="80%" width="80%" alt="NessusLab"/>
 <br />
@@ -68,8 +67,6 @@ Credentials Overview:  <br/>
 <br />
 <br />
 
-Summary: from looking at both...
-
 <h3> Remediation </h3>
 
 In this section we will look to rectify some of the vulnerabilties listed
@@ -85,7 +82,6 @@ Performing Windows Updates:  <br/>
 <br />
 <br />
 <br />
-<br />
 <h3>Scan with Credentials Provided</h3>
 <br />
 <br />
@@ -94,7 +90,7 @@ Conclusion:  <br/>
 <br />
 <br />
 <br />
-After updating windows and uninstalling firefox we see a significant drop in the amount of vulnerabilties present. Oringinally we had '73' critical and '81' high serverity vulnerabilties, now after just running windows updates once and uninstalling firefox we have '0' critical and '7' high vulnerabilities. Although this is an excellent drop in the amount of vulnerabilties, what is still present is still very danagerous. What can see that the '7' high serverity vulnerablties are susseptible to 'RCE' attacks. As we all know remote code execution is no joke and should be rectified ASAP.
+After updating windows and uninstalling firefox we see a significant drop in the amount of vulnerabilties present. Oringinally we had '73' critical and '81' high severity vulnerabilties, now after just running a windows updates once and uninstalling firefox we have '0' critical and '7' high vulnerabilities. Although this is an excellent drop in the amount of vulnerabilties, what is still present is still very danagerous. What can see that the '7' high severity vulnerablties are susseptible to 'RCE' attacks. As we all know remote code execution is no joke and should be rectified ASAP.
 
 Overall this was just a very short demonstration of me using Nessus, i hope you learnt something and enjoyed :p 
 </p>
