@@ -1,7 +1,7 @@
 <h1>Nessus Vulnerability Assessment Lab</h1>
 
 <h2>Description</h2>
-This project consists of peformning a simple vulnerability assessment on a virtual machine(LocalHost) using Nessus. Two types of scans were performed, the first being a basic scan with no credentials and another with user:pass credentails applied. In this project we are going to evaluate the differences between both scans and then remediate the vulnerabilities
+This project consists of performing a simple vulnerability assessment on a virtual machine(LocalHost) using Nessus. Two types of scans were performed, the first being a basic scan with no credentials and another with user:pass credentials applied. In this project, we are going to evaluate the differences between both scans and then remediate the vulnerabilities
 <br />
 
 <h2>Utilities Used</h2>
@@ -33,7 +33,7 @@ Scan Results: <br/>
 
 <h3>Scan with Credentials Provided</h3>
 
-Next, we will perform a credential scan,however before doing this we must ensure the 'remote registry' service is enabled. This will allow nessus to connect to the windows remote registry and crawl through the registry for any vulnerabilities
+Next, we will perform a credential scan, however, before doing this we must ensure the 'remote registry' service is enabled. This will allow Nessus to connect to the windows remote registry and crawl through the registry for any vulnerabilities
 
 
 Inputing User Credentials:  <br/>
@@ -61,14 +61,14 @@ Credentials Assessment Overview:  <br/>
 <img src="https://i.imgur.com/lhv7gGA.png" height="80%" width="80%" alt="NessusLab"/>
 <br />
 <br />
-As conveyed above, we're able to identify a plethora of vulnerabilties once we opt to use the credential scan. This is because when remote registry is enabled we're able to look at things such as the file system registry and running services, thus making it a much more in-depth and extensive scan.
+As conveyed above, we're able to identify a plethora of vulnerabilities once we opt to use the credential scan. This is because when the remote registry is enabled we're able to look at things such as the file system registry and running services, thus making it a much more in-depth and extensive scan.
 
 
-In the upcoming section i will look to remediate some of the vulnerabilties found in the latest scan(cred scan) 
+In the upcoming section, i will look to remediate some of the vulnerabilities found in the latest scan(cred scan) 
 
 <h3> Remediation </h3>
 
-In this section we will look to rectify some of the vulnerabilties found
+In this section, we will look to rectify some of the vulnerabilities found
 
 Uninstalling Firefox:  <br/>
 <img src="https://i.imgur.com/KYhDm65.png" height="80%" width="80%" alt="NessusLab"/>
@@ -88,7 +88,7 @@ Performing Windows Updates:  <br/>
 <br />
 <br />
 <h4>Conclusion</h4>
-After updating windows and uninstalling firefox we see a significant drop in the amount of vulnerabilties present. Oringinally we had '73' critical and '81' high severity vulnerabilties, now after just running a windows updates once and uninstalling firefox we have '0' critical and '7' high vulnerabilities. Although this is an excellent drop in the amount of vulnerabilties, what is still present very danagerous. This is because the '7' high severity vulnerablties are susseptible to 'RCE' attacks. As we all know remote code execution is no joke and should be rectified ASAP. To remediate these vulnerabilties , more updates should be applied, whilst also doing follow up research of the CVE's that are present.
+After updating windows and uninstalling firefox we see a significant drop in the number of vulnerabilities present. Originally we had '73' critical and '81' high severity vulnerabilities, now after just running a windows update once and uninstalling firefox we have '0' critical and '7' high vulnerabilities. Although this is an excellent drop in the number of vulnerabilities, what is still present is very dangerous. This is because the '7' high severity vulnerabilities are susceptible to 'RCE' attacks. As we all know remote code execution is no joke and should be rectified ASAP. To remediate these vulnerabilities, more updates should be applied, whilst also doing follow-up research on the CVEs that are present.
 
-Overall this was just a very short demonstration of me using Nessus, i hope you learnt something and enjoyed :p 
+Overall this was just a very short demonstration of me using Nessus, I hope you learned something and enjoyed :p 
 </p>
